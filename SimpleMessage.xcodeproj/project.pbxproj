@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B40E349D15A8603E008A95AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E349C15A8603E008A95AB /* Cocoa.framework */; };
+		B40E34A715A8603E008A95AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B40E34A515A8603E008A95AB /* InfoPlist.strings */; };
+		B40E34A915A8603E008A95AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E34A815A8603E008A95AB /* main.m */; };
+		B40E34AD15A8603E008A95AB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B40E34AB15A8603E008A95AB /* Credits.rtf */; };
+		B40E34B015A8603E008A95AB /* SimpleMessageAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E34AF15A8603E008A95AB /* SimpleMessageAppDelegate.m */; };
+		B40E34B315A8603E008A95AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B40E34B115A8603E008A95AB /* MainMenu.xib */; };
+		B40E34BB15A8603E008A95AB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E34BA15A8603E008A95AB /* SenTestingKit.framework */; };
+		B40E34BC15A8603E008A95AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E349C15A8603E008A95AB /* Cocoa.framework */; };
+		B40E34C415A8603E008A95AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B40E34C215A8603E008A95AB /* InfoPlist.strings */; };
+		B40E34C615A8603E008A95AB /* SimpleMessageTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B40E34C515A8603E008A95AB /* SimpleMessageTests.h */; };
+		B40E34C815A8603E008A95AB /* SimpleMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E34C715A8603E008A95AB /* SimpleMessageTests.m */; };
+		B42161E515A8E16800D3980C /* Clients.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161C115A8E16800D3980C /* Clients.c */; };
+		B42161E615A8E16800D3980C /* Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161C315A8E16800D3980C /* Heap.c */; };
+		B42161E715A8E16800D3980C /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161C515A8E16800D3980C /* LinkedList.c */; };
+		B42161E815A8E16800D3980C /* Log.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161C715A8E16800D3980C /* Log.c */; };
+		B42161E915A8E16800D3980C /* Messages.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161C915A8E16800D3980C /* Messages.c */; };
+		B42161EA15A8E16800D3980C /* MQTTClient.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161CB15A8E16800D3980C /* MQTTClient.c */; };
+		B42161EB15A8E16800D3980C /* MQTTPacket.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161CE15A8E16800D3980C /* MQTTPacket.c */; };
+		B42161EC15A8E16800D3980C /* MQTTPacketOut.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161D015A8E16800D3980C /* MQTTPacketOut.c */; };
+		B42161ED15A8E16800D3980C /* MQTTPersistence.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161D215A8E16800D3980C /* MQTTPersistence.c */; };
+		B42161EE15A8E16800D3980C /* MQTTPersistenceDefault.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161D415A8E16800D3980C /* MQTTPersistenceDefault.c */; };
+		B42161EF15A8E16800D3980C /* MQTTProtocolClient.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161D715A8E16800D3980C /* MQTTProtocolClient.c */; };
+		B42161F015A8E16800D3980C /* MQTTProtocolOut.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161D915A8E16800D3980C /* MQTTProtocolOut.c */; };
+		B42161F115A8E16800D3980C /* Socket.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161DB15A8E16800D3980C /* Socket.c */; };
+		B42161F215A8E16800D3980C /* SocketBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161DD15A8E16800D3980C /* SocketBuffer.c */; };
+		B42161F315A8E16800D3980C /* StackTrace.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161DF15A8E16800D3980C /* StackTrace.c */; };
+		B42161F415A8E16800D3980C /* Thread.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161E115A8E16800D3980C /* Thread.c */; };
+		B42161F515A8E16800D3980C /* utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161E315A8E16800D3980C /* utf-8.c */; };
+		B42161F915A8E76B00D3980C /* SimpleMessage-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */; };
+		B442853115B074E7006AEB06 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = B442853015B074E7006AEB06 /* license.txt */; };
+		B4DC281715AF0D0C00330B24 /* ThreadSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */; };
+		B4DC281B15B04CD800330B24 /* QueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281A15B04CD800330B24 /* QueueController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B40E34BD15A8603E008A95AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B40E348F15A8603E008A95AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B40E349715A8603E008A95AB;
+			remoteInfo = SimpleMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B40E349815A8603E008A95AB /* SimpleMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40E349C15A8603E008A95AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B40E349F15A8603E008A95AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B40E34A015A8603E008A95AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B40E34A115A8603E008A95AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B40E34A415A8603E008A95AB /* SimpleMessage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMessage-Info.plist"; sourceTree = "<group>"; };
+		B40E34A615A8603E008A95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B40E34A815A8603E008A95AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B40E34AA15A8603E008A95AB /* SimpleMessage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMessage-Prefix.pch"; sourceTree = "<group>"; };
+		B40E34AC15A8603E008A95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B40E34AE15A8603E008A95AB /* SimpleMessageAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMessageAppDelegate.h; sourceTree = "<group>"; };
+		B40E34AF15A8603E008A95AB /* SimpleMessageAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMessageAppDelegate.m; sourceTree = "<group>"; };
+		B40E34B215A8603E008A95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B40E34B915A8603E008A95AB /* SimpleMessageTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMessageTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40E34BA15A8603E008A95AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B40E34C115A8603E008A95AB /* SimpleMessageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMessageTests-Info.plist"; sourceTree = "<group>"; };
+		B40E34C315A8603E008A95AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B40E34C515A8603E008A95AB /* SimpleMessageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMessageTests.h; sourceTree = "<group>"; };
+		B40E34C715A8603E008A95AB /* SimpleMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMessageTests.m; sourceTree = "<group>"; };
+		B42161C115A8E16800D3980C /* Clients.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Clients.c; sourceTree = "<group>"; };
+		B42161C215A8E16800D3980C /* Clients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clients.h; sourceTree = "<group>"; };
+		B42161C315A8E16800D3980C /* Heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Heap.c; sourceTree = "<group>"; };
+		B42161C415A8E16800D3980C /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		B42161C515A8E16800D3980C /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		B42161C615A8E16800D3980C /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		B42161C715A8E16800D3980C /* Log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Log.c; sourceTree = "<group>"; };
+		B42161C815A8E16800D3980C /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		B42161C915A8E16800D3980C /* Messages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Messages.c; sourceTree = "<group>"; };
+		B42161CA15A8E16800D3980C /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
+		B42161CB15A8E16800D3980C /* MQTTClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTClient.c; sourceTree = "<group>"; };
+		B42161CC15A8E16800D3980C /* MQTTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTClient.h; sourceTree = "<group>"; };
+		B42161CD15A8E16800D3980C /* MQTTClientPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTClientPersistence.h; sourceTree = "<group>"; };
+		B42161CE15A8E16800D3980C /* MQTTPacket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTPacket.c; sourceTree = "<group>"; };
+		B42161CF15A8E16800D3980C /* MQTTPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPacket.h; sourceTree = "<group>"; };
+		B42161D015A8E16800D3980C /* MQTTPacketOut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTPacketOut.c; sourceTree = "<group>"; };
+		B42161D115A8E16800D3980C /* MQTTPacketOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPacketOut.h; sourceTree = "<group>"; };
+		B42161D215A8E16800D3980C /* MQTTPersistence.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTPersistence.c; sourceTree = "<group>"; };
+		B42161D315A8E16800D3980C /* MQTTPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPersistence.h; sourceTree = "<group>"; };
+		B42161D415A8E16800D3980C /* MQTTPersistenceDefault.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTPersistenceDefault.c; sourceTree = "<group>"; };
+		B42161D515A8E16800D3980C /* MQTTPersistenceDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPersistenceDefault.h; sourceTree = "<group>"; };
+		B42161D615A8E16800D3980C /* MQTTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTProtocol.h; sourceTree = "<group>"; };
+		B42161D715A8E16800D3980C /* MQTTProtocolClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTProtocolClient.c; sourceTree = "<group>"; };
+		B42161D815A8E16800D3980C /* MQTTProtocolClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTProtocolClient.h; sourceTree = "<group>"; };
+		B42161D915A8E16800D3980C /* MQTTProtocolOut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MQTTProtocolOut.c; sourceTree = "<group>"; };
+		B42161DA15A8E16800D3980C /* MQTTProtocolOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTProtocolOut.h; sourceTree = "<group>"; };
+		B42161DB15A8E16800D3980C /* Socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Socket.c; sourceTree = "<group>"; };
+		B42161DC15A8E16800D3980C /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
+		B42161DD15A8E16800D3980C /* SocketBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SocketBuffer.c; sourceTree = "<group>"; };
+		B42161DE15A8E16800D3980C /* SocketBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketBuffer.h; sourceTree = "<group>"; };
+		B42161DF15A8E16800D3980C /* StackTrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StackTrace.c; sourceTree = "<group>"; };
+		B42161E015A8E16800D3980C /* StackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackTrace.h; sourceTree = "<group>"; };
+		B42161E115A8E16800D3980C /* Thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Thread.c; sourceTree = "<group>"; };
+		B42161E215A8E16800D3980C /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		B42161E315A8E16800D3980C /* utf-8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "utf-8.c"; sourceTree = "<group>"; };
+		B42161E415A8E16800D3980C /* utf-8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "utf-8.h"; sourceTree = "<group>"; };
+		B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "SimpleMessage-Icon.icns"; sourceTree = "<group>"; };
+		B442853015B074E7006AEB06 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		B4DC281515AF0D0C00330B24 /* ThreadSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSliderController.h; sourceTree = "<group>"; };
+		B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSliderController.m; sourceTree = "<group>"; };
+		B4DC281915B04CD800330B24 /* QueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueController.h; sourceTree = "<group>"; };
+		B4DC281A15B04CD800330B24 /* QueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B40E349515A8603E008A95AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E349D15A8603E008A95AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40E34B515A8603E008A95AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E34BB15A8603E008A95AB /* SenTestingKit.framework in Frameworks */,
+				B40E34BC15A8603E008A95AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B40E348D15A8603E008A95AB = {
+			isa = PBXGroup;
+			children = (
+				B442853015B074E7006AEB06 /* license.txt */,
+				B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */,
+				B42161C015A8E16800D3980C /* paho */,
+				B40E34A215A8603E008A95AB /* SimpleMessage */,
+				B40E34BF15A8603E008A95AB /* SimpleMessageTests */,
+				B40E349B15A8603E008A95AB /* Frameworks */,
+				B40E349915A8603E008A95AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B40E349915A8603E008A95AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B40E349815A8603E008A95AB /* SimpleMessage.app */,
+				B40E34B915A8603E008A95AB /* SimpleMessageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B40E349B15A8603E008A95AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40E349C15A8603E008A95AB /* Cocoa.framework */,
+				B40E34BA15A8603E008A95AB /* SenTestingKit.framework */,
+				B40E349E15A8603E008A95AB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B40E349E15A8603E008A95AB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40E349F15A8603E008A95AB /* AppKit.framework */,
+				B40E34A015A8603E008A95AB /* CoreData.framework */,
+				B40E34A115A8603E008A95AB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B40E34A215A8603E008A95AB /* SimpleMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B40E34AE15A8603E008A95AB /* SimpleMessageAppDelegate.h */,
+				B40E34AF15A8603E008A95AB /* SimpleMessageAppDelegate.m */,
+				B40E34B115A8603E008A95AB /* MainMenu.xib */,
+				B40E34A315A8603E008A95AB /* Supporting Files */,
+				B4DC281515AF0D0C00330B24 /* ThreadSliderController.h */,
+				B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */,
+				B4DC281915B04CD800330B24 /* QueueController.h */,
+				B4DC281A15B04CD800330B24 /* QueueController.m */,
+			);
+			path = SimpleMessage;
+			sourceTree = "<group>";
+		};
+		B40E34A315A8603E008A95AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B40E34A415A8603E008A95AB /* SimpleMessage-Info.plist */,
+				B40E34A515A8603E008A95AB /* InfoPlist.strings */,
+				B40E34A815A8603E008A95AB /* main.m */,
+				B40E34AA15A8603E008A95AB /* SimpleMessage-Prefix.pch */,
+				B40E34AB15A8603E008A95AB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B40E34BF15A8603E008A95AB /* SimpleMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				B40E34C515A8603E008A95AB /* SimpleMessageTests.h */,
+				B40E34C715A8603E008A95AB /* SimpleMessageTests.m */,
+				B40E34C015A8603E008A95AB /* Supporting Files */,
+			);
+			path = SimpleMessageTests;
+			sourceTree = "<group>";
+		};
+		B40E34C015A8603E008A95AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B40E34C115A8603E008A95AB /* SimpleMessageTests-Info.plist */,
+				B40E34C215A8603E008A95AB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B42161C015A8E16800D3980C /* paho */ = {
+			isa = PBXGroup;
+			children = (
+				B42161C115A8E16800D3980C /* Clients.c */,
+				B42161C215A8E16800D3980C /* Clients.h */,
+				B42161C315A8E16800D3980C /* Heap.c */,
+				B42161C415A8E16800D3980C /* Heap.h */,
+				B42161C515A8E16800D3980C /* LinkedList.c */,
+				B42161C615A8E16800D3980C /* LinkedList.h */,
+				B42161C715A8E16800D3980C /* Log.c */,
+				B42161C815A8E16800D3980C /* Log.h */,
+				B42161C915A8E16800D3980C /* Messages.c */,
+				B42161CA15A8E16800D3980C /* Messages.h */,
+				B42161CB15A8E16800D3980C /* MQTTClient.c */,
+				B42161CC15A8E16800D3980C /* MQTTClient.h */,
+				B42161CD15A8E16800D3980C /* MQTTClientPersistence.h */,
+				B42161CE15A8E16800D3980C /* MQTTPacket.c */,
+				B42161CF15A8E16800D3980C /* MQTTPacket.h */,
+				B42161D015A8E16800D3980C /* MQTTPacketOut.c */,
+				B42161D115A8E16800D3980C /* MQTTPacketOut.h */,
+				B42161D215A8E16800D3980C /* MQTTPersistence.c */,
+				B42161D315A8E16800D3980C /* MQTTPersistence.h */,
+				B42161D415A8E16800D3980C /* MQTTPersistenceDefault.c */,
+				B42161D515A8E16800D3980C /* MQTTPersistenceDefault.h */,
+				B42161D615A8E16800D3980C /* MQTTProtocol.h */,
+				B42161D715A8E16800D3980C /* MQTTProtocolClient.c */,
+				B42161D815A8E16800D3980C /* MQTTProtocolClient.h */,
+				B42161D915A8E16800D3980C /* MQTTProtocolOut.c */,
+				B42161DA15A8E16800D3980C /* MQTTProtocolOut.h */,
+				B42161DB15A8E16800D3980C /* Socket.c */,
+				B42161DC15A8E16800D3980C /* Socket.h */,
+				B42161DD15A8E16800D3980C /* SocketBuffer.c */,
+				B42161DE15A8E16800D3980C /* SocketBuffer.h */,
+				B42161DF15A8E16800D3980C /* StackTrace.c */,
+				B42161E015A8E16800D3980C /* StackTrace.h */,
+				B42161E115A8E16800D3980C /* Thread.c */,
+				B42161E215A8E16800D3980C /* Thread.h */,
+				B42161E315A8E16800D3980C /* utf-8.c */,
+				B42161E415A8E16800D3980C /* utf-8.h */,
+			);
+			path = paho;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B40E349715A8603E008A95AB /* SimpleMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40E34CB15A8603E008A95AB /* Build configuration list for PBXNativeTarget "SimpleMessage" */;
+			buildPhases = (
+				B40E349415A8603E008A95AB /* Sources */,
+				B40E349515A8603E008A95AB /* Frameworks */,
+				B40E349615A8603E008A95AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleMessage;
+			productName = SimpleMessage;
+			productReference = B40E349815A8603E008A95AB /* SimpleMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B40E34B815A8603E008A95AB /* SimpleMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40E34CE15A8603E008A95AB /* Build configuration list for PBXNativeTarget "SimpleMessageTests" */;
+			buildPhases = (
+				B40E34B415A8603E008A95AB /* Sources */,
+				B40E34B515A8603E008A95AB /* Frameworks */,
+				B40E34B615A8603E008A95AB /* Resources */,
+				B40E34B715A8603E008A95AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B40E34BE15A8603E008A95AB /* PBXTargetDependency */,
+			);
+			name = SimpleMessageTests;
+			productName = SimpleMessageTests;
+			productReference = B40E34B915A8603E008A95AB /* SimpleMessageTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B40E348F15A8603E008A95AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "dc-square GmbH";
+			};
+			buildConfigurationList = B40E349215A8603E008A95AB /* Build configuration list for PBXProject "SimpleMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B40E348D15A8603E008A95AB;
+			productRefGroup = B40E349915A8603E008A95AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B40E349715A8603E008A95AB /* SimpleMessage */,
+				B40E34B815A8603E008A95AB /* SimpleMessageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B40E349615A8603E008A95AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E34A715A8603E008A95AB /* InfoPlist.strings in Resources */,
+				B40E34AD15A8603E008A95AB /* Credits.rtf in Resources */,
+				B40E34B315A8603E008A95AB /* MainMenu.xib in Resources */,
+				B42161F915A8E76B00D3980C /* SimpleMessage-Icon.icns in Resources */,
+				B442853115B074E7006AEB06 /* license.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40E34B615A8603E008A95AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E34C415A8603E008A95AB /* InfoPlist.strings in Resources */,
+				B40E34C615A8603E008A95AB /* SimpleMessageTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B40E34B715A8603E008A95AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B40E349415A8603E008A95AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E34A915A8603E008A95AB /* main.m in Sources */,
+				B40E34B015A8603E008A95AB /* SimpleMessageAppDelegate.m in Sources */,
+				B42161E515A8E16800D3980C /* Clients.c in Sources */,
+				B42161E615A8E16800D3980C /* Heap.c in Sources */,
+				B42161E715A8E16800D3980C /* LinkedList.c in Sources */,
+				B42161E815A8E16800D3980C /* Log.c in Sources */,
+				B42161E915A8E16800D3980C /* Messages.c in Sources */,
+				B42161EA15A8E16800D3980C /* MQTTClient.c in Sources */,
+				B42161EB15A8E16800D3980C /* MQTTPacket.c in Sources */,
+				B42161EC15A8E16800D3980C /* MQTTPacketOut.c in Sources */,
+				B42161ED15A8E16800D3980C /* MQTTPersistence.c in Sources */,
+				B42161EE15A8E16800D3980C /* MQTTPersistenceDefault.c in Sources */,
+				B42161EF15A8E16800D3980C /* MQTTProtocolClient.c in Sources */,
+				B42161F015A8E16800D3980C /* MQTTProtocolOut.c in Sources */,
+				B42161F115A8E16800D3980C /* Socket.c in Sources */,
+				B42161F215A8E16800D3980C /* SocketBuffer.c in Sources */,
+				B42161F315A8E16800D3980C /* StackTrace.c in Sources */,
+				B42161F415A8E16800D3980C /* Thread.c in Sources */,
+				B42161F515A8E16800D3980C /* utf-8.c in Sources */,
+				B4DC281715AF0D0C00330B24 /* ThreadSliderController.m in Sources */,
+				B4DC281B15B04CD800330B24 /* QueueController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40E34B415A8603E008A95AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40E34C815A8603E008A95AB /* SimpleMessageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B40E34BE15A8603E008A95AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B40E349715A8603E008A95AB /* SimpleMessage */;
+			targetProxy = B40E34BD15A8603E008A95AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B40E34A515A8603E008A95AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40E34A615A8603E008A95AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B40E34AB15A8603E008A95AB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40E34AC15A8603E008A95AB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B40E34B115A8603E008A95AB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40E34B215A8603E008A95AB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B40E34C215A8603E008A95AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40E34C315A8603E008A95AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B40E34C915A8603E008A95AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B40E34CA15A8603E008A95AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B40E34CC15A8603E008A95AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SimpleMessage/SimpleMessage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B40E34CD15A8603E008A95AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SimpleMessage/SimpleMessage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B40E34CF15A8603E008A95AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMessage.app/Contents/MacOS/SimpleMessage";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SimpleMessageTests/SimpleMessageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B40E34D015A8603E008A95AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMessage.app/Contents/MacOS/SimpleMessage";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SimpleMessageTests/SimpleMessageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B40E349215A8603E008A95AB /* Build configuration list for PBXProject "SimpleMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40E34C915A8603E008A95AB /* Debug */,
+				B40E34CA15A8603E008A95AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40E34CB15A8603E008A95AB /* Build configuration list for PBXNativeTarget "SimpleMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40E34CC15A8603E008A95AB /* Debug */,
+				B40E34CD15A8603E008A95AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40E34CE15A8603E008A95AB /* Build configuration list for PBXNativeTarget "SimpleMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40E34CF15A8603E008A95AB /* Debug */,
+				B40E34D015A8603E008A95AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B40E348F15A8603E008A95AB /* Project object */;
+}

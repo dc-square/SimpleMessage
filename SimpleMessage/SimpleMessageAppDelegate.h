@@ -32,6 +32,7 @@
     NSTextField *parallelTextField;
     NSTextField *ThreadCountTextField;
     NSButton *resumeButton;
+    NSTextField *brokerTextField;
 }
 
 @property (assign) Boolean stopped;
@@ -39,6 +40,7 @@
 @property (assign) IBOutlet NSTextField *targetField;
 @property (assign) IBOutlet NSTextField *messageField;
 @property (assign) IBOutlet NSTextField *brokerLink;
+@property (assign) IBOutlet NSTextField *brokerTextField;
 
 @property (assign) IBOutlet NSSlider *parallelThreadsSlider;
 @property (assign) IBOutlet NSTextField *parallelTextField;
@@ -48,6 +50,7 @@
 @property (assign) IBOutlet NSTextField *ThreadCountTextField;
 @property (assign) IBOutlet NSButton *resumeButton;
 - (IBAction)stopButtonAction:(id)sender;
+- (IBAction)quitButtonAction:(id)sender;
 
 - (IBAction)takeValueFromThreadsSlider:(id)sender;
 

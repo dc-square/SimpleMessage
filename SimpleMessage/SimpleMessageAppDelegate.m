@@ -25,6 +25,7 @@
 #import "QueueController.h"
 
 @implementation SimpleMessageAppDelegate
+@synthesize brokerTextField;
 @synthesize parallelThreadsSlider;
 @synthesize parallelTextField;
 
@@ -36,7 +37,6 @@
 @synthesize resumeButton;
 @synthesize queueController = _queueController;
 
-#define ADDRESS     "tcp://mqtt-pub.dc-square.de:1883"
 #define CLIENTID    "SimpleMessage"
 #define QOS         1
 #define TIMEOUT     10000L
@@ -78,6 +78,12 @@ volatile MQTTClient_deliveryToken deliveredtoken;
 
 
 
+- (IBAction)quitButtonAction:(id)sender {
+    
+    [[NSApplication sharedApplication] terminate:nil];
+    
+}
+
 - (IBAction)takeValueFromThreadsSlider:(id)sender {        
     [self.threadSliderController setThreadCount:[sender intValue]];
     [self updateUserInterface];
@@ -115,7 +121,7 @@ volatile MQTTClient_deliveryToken deliveredtoken;
     
     char *chartopic = [[targetField stringValue] UTF8String];
     
-    MQTTClient_create(&client, ADDRESS, CLIENTID,
+    MQTTClient_create(&client, [[brokerTextField stringValue] UTF8String], CLIENTID,
                       MQTTCLIENT_PERSISTENCE_NONE, NULL);
     
     conn_opts.keepAliveInterval = 20;

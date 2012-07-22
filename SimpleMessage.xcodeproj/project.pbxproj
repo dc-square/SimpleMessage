@@ -39,6 +39,7 @@
 		B442853115B074E7006AEB06 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = B442853015B074E7006AEB06 /* license.txt */; };
 		B4DC281715AF0D0C00330B24 /* ThreadSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */; };
 		B4DC281B15B04CD800330B24 /* QueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281A15B04CD800330B24 /* QueueController.m */; };
+		B4F7328D15BC62E20059111D /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = B4F7328C15BC62E20059111D /* CHANGELOG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSliderController.m; sourceTree = "<group>"; };
 		B4DC281915B04CD800330B24 /* QueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueController.h; sourceTree = "<group>"; };
 		B4DC281A15B04CD800330B24 /* QueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueController.m; sourceTree = "<group>"; };
+		B4F7328C15BC62E20059111D /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CHANGELOG; path = ../SimpleMessage/CHANGELOG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		B40E348D15A8603E008A95AB = {
 			isa = PBXGroup;
 			children = (
+				B4F7328C15BC62E20059111D /* CHANGELOG */,
 				B442853015B074E7006AEB06 /* license.txt */,
 				B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */,
 				B42161C015A8E16800D3980C /* paho */,
@@ -343,6 +346,7 @@
 				B40E34B315A8603E008A95AB /* MainMenu.xib in Resources */,
 				B42161F915A8E76B00D3980C /* SimpleMessage-Icon.icns in Resources */,
 				B442853115B074E7006AEB06 /* license.txt in Resources */,
+				B4F7328D15BC62E20059111D /* CHANGELOG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

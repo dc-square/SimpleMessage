@@ -1,3 +1,14 @@
+SimpleMessage v0.1.2, 2012-07-22
+-------------------------------------
+- Fixed hiding behaviour when window
+  lost focus.
+-------------------------------------
+SimpleMessage v0.1.1, 2012-07-22
+-------------------------------------
+- Added generic broker field
+- Added improved close functionality.
+-------------------------------------
 SimpleMessage v0.1, 2012-07-21
--------------------------------
+-------------------------------------
 - Initial preview version.
+-------------------------------------

@@ -29,7 +29,7 @@
     self = [super init];
     if (self) {
         // Initialization code here.
-        _threadCount = 10;
+        _threadCount = 1;
     }
     
     return self;

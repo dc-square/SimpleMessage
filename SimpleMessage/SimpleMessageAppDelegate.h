@@ -22,6 +22,7 @@
 
 @class ThreadSliderController;
 @class QueueController;
+@class QualityOfServiceController;
 
 @interface SimpleMessageAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
@@ -41,27 +42,24 @@
 @property (assign) IBOutlet NSTextField *messageField;
 @property (assign) IBOutlet NSTextField *brokerLink;
 @property (assign) IBOutlet NSTextField *brokerTextField;
-
 @property (assign) IBOutlet NSSlider *parallelThreadsSlider;
 @property (assign) IBOutlet NSTextField *parallelTextField;
 @property (assign) ThreadSliderController *threadSliderController;
 @property (assign) QueueController *queueController;
-
+@property (assign) QualityOfServiceController *qualityOfServiceController;
 @property (assign) IBOutlet NSTextField *ThreadCountTextField;
 @property (assign) IBOutlet NSButton *resumeButton;
+@property (assign) IBOutlet NSButton *appendCounterCheckBox;
+@property (assign) IBOutlet NSButton *retainMessageCheckBox;
+
 - (IBAction)stopButtonAction:(id)sender;
 - (IBAction)quitButtonAction:(id)sender;
-
 - (IBAction)takeValueFromThreadsSlider:(id)sender;
-
 - (IBAction)sendButton:(id)sender;
-
 - (IBAction)pauseButtonAction:(id)sender;
-
 - (IBAction)resumeButtonAction:(id)sender;
-
-- (void)sendMQTTMessage;
-
+- (void)sendMQTTMessage:(int)queueIdentifier;
 - (void)updateUserInterface;
+
 
 @end

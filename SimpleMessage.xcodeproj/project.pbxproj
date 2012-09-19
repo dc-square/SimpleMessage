@@ -37,6 +37,7 @@
 		B42161F515A8E16800D3980C /* utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = B42161E315A8E16800D3980C /* utf-8.c */; };
 		B42161F915A8E76B00D3980C /* SimpleMessage-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */; };
 		B442853115B074E7006AEB06 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = B442853015B074E7006AEB06 /* license.txt */; };
+		B44A919D1608B62C00BA47CE /* QualityOfServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A919C1608B62C00BA47CE /* QualityOfServiceController.m */; };
 		B4DC281715AF0D0C00330B24 /* ThreadSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */; };
 		B4DC281B15B04CD800330B24 /* QueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DC281A15B04CD800330B24 /* QueueController.m */; };
 		B4FE3C7615CA710900967242 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = B4FE3C7515CA710900967242 /* CHANGELOG */; };
@@ -110,6 +111,8 @@
 		B42161E415A8E16800D3980C /* utf-8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "utf-8.h"; sourceTree = "<group>"; };
 		B42161F815A8E76B00D3980C /* SimpleMessage-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "SimpleMessage-Icon.icns"; sourceTree = "<group>"; };
 		B442853015B074E7006AEB06 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		B44A919B1608B62C00BA47CE /* QualityOfServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityOfServiceController.h; sourceTree = "<group>"; };
+		B44A919C1608B62C00BA47CE /* QualityOfServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityOfServiceController.m; sourceTree = "<group>"; };
 		B4DC281515AF0D0C00330B24 /* ThreadSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSliderController.h; sourceTree = "<group>"; };
 		B4DC281615AF0D0C00330B24 /* ThreadSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSliderController.m; sourceTree = "<group>"; };
 		B4DC281915B04CD800330B24 /* QueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 		B40E34A215A8603E008A95AB /* SimpleMessage */ = {
 			isa = PBXGroup;
 			children = (
+				B44A919B1608B62C00BA47CE /* QualityOfServiceController.h */,
+				B44A919C1608B62C00BA47CE /* QualityOfServiceController.m */,
 				B40E34AE15A8603E008A95AB /* SimpleMessageAppDelegate.h */,
 				B40E34AF15A8603E008A95AB /* SimpleMessageAppDelegate.m */,
 				B40E34B115A8603E008A95AB /* MainMenu.xib */,
@@ -315,7 +320,7 @@
 		B40E348F15A8603E008A95AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "dc-square GmbH";
 			};
 			buildConfigurationList = B40E349215A8603E008A95AB /* Build configuration list for PBXProject "SimpleMessage" */;
@@ -403,6 +408,7 @@
 				B42161F515A8E16800D3980C /* utf-8.c in Sources */,
 				B4DC281715AF0D0C00330B24 /* ThreadSliderController.m in Sources */,
 				B4DC281B15B04CD800330B24 /* QueueController.m in Sources */,
+				B44A919D1608B62C00BA47CE /* QualityOfServiceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +486,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -500,7 +506,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -508,6 +514,7 @@
 		B40E34CC15A8603E008A95AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -520,6 +527,7 @@
 		B40E34CD15A8603E008A95AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -533,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMessage.app/Contents/MacOS/SimpleMessage";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";
@@ -548,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMessage.app/Contents/MacOS/SimpleMessage";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMessage/SimpleMessage-Prefix.pch";

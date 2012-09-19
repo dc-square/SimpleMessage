@@ -1,3 +1,14 @@
+-------------------------------------
+SimpleMessage v0.1.5, 2012-08-18
+-------------------------------------
+- Added Quality of Service 
+  funktionality
+- Added retain message functionality
+- Fixed refreshing bug
+- Changed default message count to 1
+- Changed compiler options to LLVM 
+  and Mac OS X 10.8
+-------------------------------------
 SimpleMessage v0.1.2, 2012-08-01
 -------------------------------------
 - Fixed hiding behaviour when window
